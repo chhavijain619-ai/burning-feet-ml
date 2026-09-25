@@ -1,0 +1,50 @@
+{
+  "model_name": "SVM",
+  "best_params": {
+    "classifier__C": "1",
+    "classifier__gamma": "scale",
+    "classifier__kernel": "rbf"
+  },
+  "best_cv_f1_macro": 0.8835938454576304,
+  "test_metrics": {
+    "accuracy": 0.8733333333333333,
+    "precision": 0.8722345172127494,
+    "recall": 0.871984126984127,
+    "f1_score": 0.8714260545822929
+  },
+  "feature_columns": {
+    "numeric": [
+      "age",
+      "duration_weeks",
+      "severity_level",
+      "symptom_score",
+      "risk_factor_count"
+    ],
+    "categorical": [
+      "gender",
+      "physical_activity",
+      "duration_category"
+    ],
+    "binary": [
+      "burning_sensation",
+      "tingling",
+      "numbness",
+      "foot_pain",
+      "warmth_sensation",
+      "redness",
+      "swelling",
+      "night_time_symptoms",
+      "diabetes_history",
+      "vitamin_deficiency_history",
+      "thyroid_condition",
+      "alcohol_risk_factor",
+      "peripheral_neuropathy_history"
+    ]
+  },
+  "target_classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "disclaimer": "This model is trained on a SYNTHETIC/DEMONSTRATION dataset for academic purposes only. It does NOT provide a medical diagnosis."
+}
